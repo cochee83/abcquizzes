@@ -107,7 +107,7 @@ def exec_run(conn, user_id: int, num_of_letters: int, loops: int) -> int:
 
     time_in_secs = time.perf_counter()-tic
 
-    print(f"Score: {count}")
+    print(f"Score: {count}/{loops}")
     print(f"Time: {time_in_secs:0.4f}")
 
     execute_query(conn, f"""
